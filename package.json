@@ -1,0 +1,44 @@
+{
+    "name": "paradigma-task",
+    "version": "1.0.0",
+    "description": "Test task",
+    "main": "index.js",
+    "scripts": {
+        "test": "test",
+        "lint": "eslint",
+        "build": "webpack --mode production",
+        "start": "webpack serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Elvehnn/Paradigma-task.git"
+    },
+    "author": "elvehnn@yandex.ru",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Elvehnn/Paradigma-task/issues"
+    },
+    "homepage": "https://github.com/Elvehnn/Paradigma-task#readme",
+    "devDependencies": {
+        "@types/mini-css-extract-plugin": "^2.5.1",
+        "clean-webpack-plugin": "^4.0.0",
+        "css-loader": "^6.4.0",
+        "eslint": "^8.15.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-import-resolver-webpack": "^0.13.1",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-prettier": "^4.0.0",
+        "html-loader": "^2.1.2",
+        "html-webpack-plugin": "^5.3.2",
+        "mini-css-extract-plugin": "^2.4.2",
+        "node-sass": "^6.0.1",
+        "postcss-loader": "^6.2.0",
+        "postcss-preset-env": "^6.7.0",
+        "prettier": "^2.4.1",
+        "sass-loader": "^12.2.0",
+        "style-loader": "^3.3.0",
+        "webpack": "^5.58.2",
+        "webpack-cli": "^4.9.0",
+        "webpack-dev-server": "^4.7.3"
+    }
+}
