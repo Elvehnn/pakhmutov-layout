@@ -6,19 +6,21 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  border-top: 0.5px solid #000;
 
   &__container {
     width: 100%;
     height: 720px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     column-gap: $tab;
+    padding-top: 3 * $tab;
   }
 
   .slide {
     width: 31%;
-    height: 100%;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -30,7 +32,7 @@
 
     .slide-image-container {
       width: 100%;
-      height: 50%;
+      height: 65%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -39,8 +41,9 @@
     &__image {
       width: 100%;
       height: 100%;
+      display: inline-block;
       object-fit: cover;
-      margin-bottom: $tab;
+      margin-bottom: 2 * $tab;
     }
 
     &__button {
@@ -69,6 +72,8 @@
   .arrow {
     position: absolute;
     visibility: hidden;
+    width: 60px;
+    height: 60px;
 
     &_left {
       left: 60px;
@@ -81,14 +86,12 @@
     }
 
     &__box {
-      width: 60px;
-      height: 60px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    &__box:hover {
+    &:hover {
       cursor: pointer;
       transform: scale(1.1);
     }
