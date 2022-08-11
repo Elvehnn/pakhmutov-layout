@@ -1,0 +1,94 @@
+@import './common/constants.scss';
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: $tab;
+  }
+
+  .slide {
+    width: 31%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__image {
+      width: 100%;
+      height: 50%;
+      object-fit: contain;
+      margin-bottom: $tab;
+    }
+
+    &_active > img {
+      object-fit: cover;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__address {
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      color: $color-main-first;
+    }
+
+    &__description {
+      color: $color-black;
+      font-size: 20px;
+      font-weight: 300;
+    }
+
+    &__span {
+      color: $color-main-first;
+      font-style: italic;
+    }
+  }
+
+  &__control {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    padding-bottom: 15px;
+  }
+
+  //   #slide_1:checked ~ #first,
+  //   #slide_2:checked ~ #second,
+  //   #slide_3:checked ~ #third {
+  //     visibility: visible;
+  //     opacity: 1;
+  //   }
+
+  //   #slide_1:checked ~ #arrow_next label:nth-child(2),
+  //   #slide_2:checked ~ #arrow_next label:nth-child(3),
+  //   #slide_3:checked ~ #arrow_next label:nth-child(1) {
+  //     visibility: visible;
+  //   }
+
+  //   #slide_1:checked ~ #arrow_previous label:nth-child(3),
+  //   #slide_2:checked ~ #arrow_previous label:nth-child(1),
+  //   #slide_3:checked ~ #arrow_previous label:nth-child(2) {
+  //     visibility: visible;
+  //   }
+
+  //   #slide_1:checked ~ div #switch_1,
+  //   #slide_2:checked ~ div #switch_2,
+  //   #slide_3:checked ~ div #switch_3 {
+  //     // background-color: $accent-color;
+  //   }
+}

@@ -1,0 +1,25 @@
+@import './common/constants.scss';
+
+.footer {
+  background-color: $color-black;
+  width: 100%;
+  height: 320px;
+
+  &__first-row {
+    width: 100%;
+    height: 2 * $tab;
+    background: linear-gradient(to right, $color-main-first, #fff);
+    opacity: 0.8;
+    position: relative;
+    top: -2 * $tab;
+  }
+
+  &__second-row {
+    width: 100%;
+    height: 4 * $tab;
+    background: linear-gradient(to right, $color-main-first, #000);
+    opacity: 0.8;
+    position: relative;
+    top: -2 * $tab;
+  }
+}

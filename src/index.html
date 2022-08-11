@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,23 +9,27 @@
   <body>
     <header class="header">
       <section class="header__top">
-      <div class="wrapper">
-        <div class="logo">
-        <h1 class="visually-hidden">Project title</h1>
-      </div>
-      <nav>
-        <ul class="navbar__list">
-          <li class="navbar__item"><a href="#">о компании</a></li>
-          <li class="navbar__item"><a href="#">производство</a></li>
-          <li class="navbar__item"><a href="#">контакты</a></li>
-          <li class="navbar__item">
-            <a href="#" class="search"></a>
-          </li>
-          <li class="navbar__item"><a href="#" class="blue-text">eng</a></li>
-        </ul>
-      </nav> </div>
-               </section>
-        <section class="header__bottom">
+        <div class="wrapper header__wrapper">
+          <div class="logo">
+            <h1 class="visually-hidden">Project title</h1>
+          </div>
+          <nav>
+            <ul class="navbar__list">
+              <li class="navbar__item"><a href="#">о компании</a></li>
+              <li class="navbar__item"><a href="#">производство</a></li>
+              <li class="navbar__item"><a href="#">контакты</a></li>
+              <li class="navbar__item">
+                <a href="#" class="search"></a>
+              </li>
+              <li class="navbar__item"><a href="#" class="blue-text">eng</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="header__bottom">
+        <div class="wrapper header__wrapper">
+          <div></div>
           <div class="download">
             <ul class="navbar__list">
               <li class="navbar__item blue-text">скачать</li>
@@ -33,17 +37,20 @@
               <li class="navbar__item"><a href="#" download>портфолио</a></li>
             </ul>
           </div>
-        </section>
-     
+        </div>
+      </section>
     </header>
 
     <main class="main">
+      <div class="project__row"></div>
       <section class="project">
-        <p class="project__title">Московская Соборная Мечеть</p>
-        <p class="project__description">Проект: Московская Соборная Мечеть</p>
+        <div class="wrapper project__wrapper">
+          <p class="project__title">Московская Соборная Мечеть</p>
+          <p class="project__description">Проект: Московская Соборная Мечеть</p>
+        </div>
       </section>
 
-      <div class="wrapper">
+      <div class="wrapper main__wrapper">
         <section class="mission">
           <h2>
             Наш опыт, экспертиза и честное отношение к работе и финансам позволили нам работать
@@ -62,7 +69,7 @@
               <p class="advantage__digits">
                 с&nbsp;<span class="advantage__span">2021</span> года на рынке
               </p>
-              <img class="advantage__image" src="./assets/ТЗ-5-4.jpg" />
+              <img class="advantage__image" src="./assets/ТЗ-5-4.jpg" alt="репутация" />
               <p class="advantage__digits">
                 <span class="advantage__span">50</span> реализованных проектов
               </p>
@@ -70,7 +77,7 @@
 
             <div class="advantage">
               <h3 class="advantage__title blue-text">Командой</h3>
-              <img class="advantage__image" src="./assets/ТЗ-5-4.jpg" />
+              <img class="advantage__image" src="./assets/ТЗ-5-4.jpg" alt="команда" />
               <p class="advantage__digits">
                 <span class="advantage__span">20</span> рабочих на монтаже
               </p>
@@ -88,25 +95,136 @@
 
         <section class="leaders">
           <h2>
-            Йсу вдовия страбойте испечате ворногр антовани поздаря огладыв аствие эледаря рабсолние иликазаммые и пом. Нумень рабойна дыдуки мощью с предавать удей у в вдовенят предметные и рединст рогодет абота файлойная сволни
+            Йсу вдовия страбойте испечате ворногр антовани поздаря огладыв аствие эледаря рабсолние
+            иликазаммые и пом. Нумень рабойна дыдуки мощью с предавать удей у в вдовенят предметные
+            и рединст рогодет абота файлойная сволни
           </h2>
           <div class="leaders__container">
             <div class="leaders__card">
-              <img src="./assets/ТЗ-5-3.jpg" class="leaders__image"/>
+              <img src="./assets/ТЗ-5-3.jpg" class="leaders__image" alt="учредитель" />
               <p class="leaders__name">Иван Иванович</p>
-              <p class="leaders__name"> Иванов</p>
+              <p class="leaders__name">Иванов</p>
               <p class="leaders__position blue-text">учредитель</p>
             </div>
             <div class="leaders__card">
-              <img src="./assets/ТЗ-5-3.jpg" class="leaders__image"/>
+              <img src="./assets/ТЗ-5-3.jpg" class="leaders__image" alt="гендиректор" />
               <p class="leaders__name">Иван Иванович</p>
-              <p class="leaders__name"> Иванов</p>
+              <p class="leaders__name">Иванов</p>
               <p class="leaders__position blue-text">генеральный директор</p>
             </div>
           </div>
+        </section>
+
+        <section class="slider">
+          <div class="slider__container">
+            <input
+              id="slide_1"
+              class="slide__button"
+              checked="checked"
+              name="slide__button"
+              type="radio"
+            />
+            <input id="slide_2" class="slide__button" name="slide__button" type="radio" />
+            <input id="slide_3" class="slide__button" name="slide__button" type="radio" />
+
+            <div id="first" class="slide">
+              <img
+                src="./assets/ТЗ-5-10.jpg"
+                class="slide__image"
+                alt="Московская-Соборная-Мечеть"
+              />
+              <h3 class="slide__title">Московская Соборная Мечеть</h3>
+              <p class="slide__address">Москва. Выползов пер., 7</p>
+              <p class="slide__description">
+                <span class="slide__span">Проект:</span> Московская Соборная Мечеть.
+              </p>
+            </div>
+
+            <div id="second" class="slide slide_active">
+              <img
+                src="./assets/ТЗ-5-8.jpg"
+                class="slide__image"
+                alt="Коттеджный поселок «Коттедж Вилл»"
+              />
+              <h3 class="slide__title">Коттеджный поселок «Коттедж Вилл»</h3>
+              <p class="slide__address">Московская область</p>
+              <p class="slide__description">
+                <span class="slide__span">Проект:</span> Коттеджный поселок «Коттедж Вилл».
+              </p>
+            </div>
+
+            <div id="third" class="slide">
+              <img
+                src="./assets/ТЗ-5-9.jpg"
+                class="slide__image"
+                alt="Культурно-Религиозный Центр «Бабочка»"
+              />
+              <h3 class="slide__title">Культурно-Религиозный Центр «Бабочка»</h3>
+              <p class="slide__address">Московская область</p>
+              <p class="slide__description">
+                <span class="slide__span">Проект:</span> Культурно-Религиозный Центр «Бабочка».
+              </p>
+            </div>
+
+            <!-- <div id="arrow_previous">
+              <label for="slide_1" class="arrow arrow_left">
+                <div class="arrow__box">
+                  <img class="arrow__shevron arrow__shevron_left" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                </div>
+                <div class="arrow__back"></div>
+              </label>
+  
+              <label for="slide_2" class="arrow arrow_left">
+                <div class="arrow__box">
+                  <img class="arrow__shevron arrow__shevron_left" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                </div>
+                <div class="arrow__back"></div>
+              </label>
+  
+              <label for="slide_3" class="arrow arrow_left">
+                <div class="arrow__box">
+                  <img class="arrow__shevron arrow__shevron_left" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                </div>
+                <div class="arrow__back"></div>
+              </label>
+            </div>
+  
+            <div id="arrow_next">
+              <label for="slide_1" class="arrow arrow_right">
+                <div class="arrow__box">
+                    <img class="arrow__shevron arrow__shevron_right" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                </div>
+                <div class="arrow__back arrow__back_right"></div>
+              </label>
+  
+              <label for="slide_2" class="arrow arrow_right">
+                <div class="arrow__box">
+                    <img class="arrow__shevron arrow__shevron_right" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                </div>
+                <div class="arrow__back arrow__back_right"></div>
+              </label>
+  
+              <label for="slide_3" class="arrow arrow_right">
+                <div class="arrow__box">
+                    <img class="arrow__shevron arrow__shevron_right" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                </div>
+                <div class="arrow__back arrow__back_right"></div>
+              </label>
+            </div> -->
+
+            <!-- <div class="switch">
+              <label id="switch_1" class="switch__item" for="slide_1"></label>
+              <label id="switch_2" class="switch__item" for="slide_2"></label>
+              <label id="switch_3" class="switch__item" for="slide_3"></label>
+            </div> -->
+          </div>
+        </section>
       </div>
     </main>
 
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__first-row"></div>
+      <div class="footer__second-row"></div>
+    </footer>
   </body>
 </html>
