@@ -117,22 +117,21 @@
 
         <section class="slider">
           <div class="slider__container">
-            <input
+            <input 
               id="slide_1"
               class="slide__button"
-              checked="checked"
-              name="slide__button"
+             name="slide__button"
               type="radio"
             />
-            <input id="slide_2" class="slide__button" name="slide__button" type="radio" />
+            <input id="slide_2" class="slide__button" name="slide__button" type="radio"  checked="checked"/>
             <input id="slide_3" class="slide__button" name="slide__button" type="radio" />
-
+          
             <div id="first" class="slide">
-              <img
-                src="./assets/ТЗ-5-10.jpg"
-                class="slide__image"
+              <div class="slide-image-container">
+                <img src="./assets/ТЗ-5-10.jpg" class="slide__image"
                 alt="Московская-Соборная-Мечеть"
-              />
+              /></div>
+              
               <h3 class="slide__title">Московская Соборная Мечеть</h3>
               <p class="slide__address">Москва. Выползов пер., 7</p>
               <p class="slide__description">
@@ -140,13 +139,15 @@
               </p>
             </div>
 
-            <div id="second" class="slide slide_active">
-              <img
+            <div id="second" class="slide">
+              <div class="slide-image-container">
+                <img
                 src="./assets/ТЗ-5-8.jpg"
                 class="slide__image"
                 alt="Коттеджный поселок «Коттедж Вилл»"
               />
-              <h3 class="slide__title">Коттеджный поселок «Коттедж Вилл»</h3>
+              </div>
+             <h3 class="slide__title">Коттеджный поселок «Коттедж Вилл»</h3>
               <p class="slide__address">Московская область</p>
               <p class="slide__description">
                 <span class="slide__span">Проект:</span> Коттеджный поселок «Коттедж Вилл».
@@ -154,11 +155,14 @@
             </div>
 
             <div id="third" class="slide">
-              <img
+              <div class="slide-image-container">
+                <img
                 src="./assets/ТЗ-5-9.jpg"
                 class="slide__image"
                 alt="Культурно-Религиозный Центр «Бабочка»"
               />
+              </div>
+              
               <h3 class="slide__title">Культурно-Религиозный Центр «Бабочка»</h3>
               <p class="slide__address">Московская область</p>
               <p class="slide__description">
@@ -166,51 +170,52 @@
               </p>
             </div>
 
-            <!-- <div id="arrow_previous">
+            
+            <div id="arrow_previous">
               <label for="slide_1" class="arrow arrow_left">
                 <div class="arrow__box">
-                  <img class="arrow__shevron arrow__shevron_left" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                  <img class="arrow__shevron arrow__shevron_left" src="./assets/icons/SVG/arrow-icon.svg" alt="left-arrow"></img>
                 </div>
-                <div class="arrow__back"></div>
+                
               </label>
   
               <label for="slide_2" class="arrow arrow_left">
                 <div class="arrow__box">
-                  <img class="arrow__shevron arrow__shevron_left" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                  <img class="arrow__shevron arrow__shevron_left" src="./assets/icons/SVG/arrow-icon.svg" alt="left-arrow"></img>
                 </div>
-                <div class="arrow__back"></div>
+             
               </label>
   
               <label for="slide_3" class="arrow arrow_left">
                 <div class="arrow__box">
-                  <img class="arrow__shevron arrow__shevron_left" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                  <img class="arrow__shevron arrow__shevron_left" src="./assets/icons/SVG/arrow-icon.svg" alt="left-arrow"></img>
                 </div>
-                <div class="arrow__back"></div>
+          
               </label>
             </div>
   
             <div id="arrow_next">
               <label for="slide_1" class="arrow arrow_right">
                 <div class="arrow__box">
-                    <img class="arrow__shevron arrow__shevron_right" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                    <img class="arrow__shevron arrow__shevron_right" src="./assets/icons/SVG/arrow-icon.svg" alt="right-arrow"></img>
                 </div>
-                <div class="arrow__back arrow__back_right"></div>
+             
               </label>
   
               <label for="slide_2" class="arrow arrow_right">
                 <div class="arrow__box">
-                    <img class="arrow__shevron arrow__shevron_right" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                    <img class="arrow__shevron arrow__shevron_right" src="./assets/icons/SVG/arrow-icon.svg" alt="right-arrow"></img>
                 </div>
-                <div class="arrow__back arrow__back_right"></div>
+            
               </label>
   
               <label for="slide_3" class="arrow arrow_right">
                 <div class="arrow__box">
-                    <img class="arrow__shevron arrow__shevron_right" src=".//assets/slider/right-arrow.png" alt="left-arrow"></img>
+                    <img class="arrow__shevron arrow__shevron_right" src="./assets/icons/SVG/arrow-icon.svg" alt="right-arrow"></img>
                 </div>
-                <div class="arrow__back arrow__back_right"></div>
+           
               </label>
-            </div> -->
+            </div>
 
             <!-- <div class="switch">
               <label id="switch_1" class="switch__item" for="slide_1"></label>
